@@ -1,4 +1,6 @@
-<p>
+<div class="container">
+    <img class="mini-img" src="http://placekitten.com/g/500/500"/> 
+    <p>
   <strong>Title:</strong>
   <%= @article.title %>
 </p>
@@ -6,4 +8,7 @@
 <p>
   <strong>Text:</strong>
   <%= @article.text %>
-</p>
+  </p>
+  </div>
+<%= link_to 'New Article', new_article_path, class: "big button" %>
+<%= link_to 'Back', articles_path, class: "big button" %>
